@@ -31,3 +31,5 @@ TestResults/
 # NuGet
 packages/
 *.nupkg
+# Local configuration
+Smart_Logistics_Mangment_System.API/appsettings.json
