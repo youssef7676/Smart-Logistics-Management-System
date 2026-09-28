@@ -1194,3 +1194,4 @@ GitHub: [youssef7676](https://github.com/youssef7676)
 ## ⭐ Smart Logistics Management System
 
 **Built with ASP.NET Core 8 · Clean Architecture · CQRS · JWT · SignalR**
+
