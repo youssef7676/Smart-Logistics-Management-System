@@ -202,17 +202,14 @@ A customer starts the process by creating a shipment request.
 ```mermaid
 flowchart LR
     Pending["Pending"]
-
     Approved["Approved"]
     Rejected["Rejected"]
     Cancelled["Cancelled"]
-
     Shipment["Shipment Creation"]
 
     Pending -->|Admin / Employee| Approved
     Pending -->|Admin / Employee| Rejected
     Pending -->|Customer| Cancelled
-
     Approved --> Shipment
 ```
 
@@ -630,7 +627,7 @@ Hub endpoint:
 
 The hub requires authentication.
 
-When a user connects, the system places the connection into a user-specific group:
+When a user connects, the system places the connection into:
 
 ```text
 User_{userId}
@@ -643,11 +640,8 @@ This allows notifications to be sent to a specific authenticated user.
 ```mermaid
 flowchart LR
     Driver["Driver"]
-
     API["ASP.NET Core API"]
-
     SignalR["SignalR Hub"]
-
     Customer["Customer"]
 
     Driver -->|Assignment / Status / GPS| API
@@ -971,7 +965,6 @@ dotnet tool install --global dotnet-ef
 
 ```bash
 git clone https://github.com/youssef7676/Smart-Logistics-Management-System.git
-
 cd Smart-Logistics-Management-System
 ```
 
